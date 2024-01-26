@@ -1,0 +1,24 @@
+export default function Footer() {
+  return (
+    <footer className="text-center h-16 sm:h-20 w-full sm:pt-2 pt-4 border-t mt-5 flex sm:flex-row flex-col justify-between items-center px-3 sm:mb-0 mb-3">
+      <div>
+        Powered by{" "}
+        <a
+          href="https://googlegemini.co"
+          target="_blank"
+          className="font-bold hover:underline transition underline-offset-2"
+        >
+          Google Gemini AI{" "}
+        </a>
+        and{" "}
+        <a
+          href="https://sdk.vercel.ai/docs"
+          target="_blank"
+          className="font-bold hover:underline transition underline-offset-2"
+        >
+          Vercel AI SDK
+        </a>
+      </div>
+    </footer>
+  );
+}
