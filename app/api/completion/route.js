@@ -15,9 +15,7 @@ export async function POST(req) {
     const response = await genAI
     .getGenerativeModel({ model: 'gemini-pro' })
     .generateContentStream({
-      contents: [{ role: 'user', parts: [{ text: `${prompt}. 
-      ${process.env.LANGUAGE_TIP} ${language}. 
-      ${process.env.THANK_YOU}` }] }],
+      contents: [{ role: 'user', parts: [{ text: `${prompt}. ${process.env.LANGUAGE_TIP} ${language}. ${process.env.THANK_YOU}` }] }],
     });
 
     console.log("response: ", response);
