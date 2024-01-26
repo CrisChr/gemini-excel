@@ -13,12 +13,12 @@ export async function POST(req) {
 
     // Ask Google Generative AI for a streaming completion given the prompt
     const response = await genAI
-      .getGenerativeModal({model: 'gemini-pro'})
-      .generateContentStream({
-        contents:[{role: 'user', parts: [{text: `${prompt}. 
-        ${process.env.LANGUAGE_TIP} ${language}. 
-        ${process.env.THANK_YOU}`,}]}]
-      })
+    .getGenerativeModel({ model: 'gemini-pro' })
+    .generateContentStream({
+      contents: [{ role: 'user', parts: [{ text: `${prompt}. 
+      ${process.env.LANGUAGE_TIP} ${language}. 
+      ${process.env.THANK_YOU}` }] }],
+    });
 
     console.log("response: ", response);
 
@@ -38,3 +38,7 @@ export async function POST(req) {
     }
   }
 }
+
+/**
+ * 
+ */
