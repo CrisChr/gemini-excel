@@ -22,6 +22,7 @@ export async function POST(req) {
                 ${process.env.PREFIX_PROMPT}:
                 ${prompt}. 
                 ${process.env.LANGUAGE_TIP} ${language}. 
+                ${process.env.USING_CONTENT_FORMATTING}. 
                 ${process.env.THANK_YOU}
               `,
             },
