@@ -5,6 +5,8 @@ import Image from "next/image";
 import { useCallback, useRef, useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
 import { useCompletion } from 'ai/react';
+import Markdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 
 export default function HomePage() {
@@ -122,7 +124,9 @@ export default function HomePage() {
                   });
                 }}
               >
-                <div className="whitespace-pre-wrap text-left">{answer}</div>
+                <div className="whitespace-pre-wrap text-left">
+                  <Markdown remarkPlugins={[remarkGfm]}>{answer}</Markdown>
+                </div>
               </div>
             </div>
           </>
