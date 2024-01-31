@@ -4,7 +4,7 @@ import { GoogleGenerativeAIStream, StreamingTextResponse } from "ai";
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_GEMINI_API_KEY || "");
 
 // Set the runtime to edge
-export const runtime = "edge";
+// export const runtime = "edge";
 
 export async function POST(req) {
   const { language, prompt } = await req.json();
