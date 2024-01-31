@@ -10,7 +10,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-let languages = ["中文", "English"];
+let languages = ["🇨🇳 中文", "🇬🇧 English", "🇭🇰 繁體中文", "🇯🇵 日本語", "🇫🇷 Français", "🇪🇸 español"];
 
 export default function DropDown({language, setLanguage}){
   return (
