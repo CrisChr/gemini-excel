@@ -18,7 +18,12 @@ export async function POST(req) {
           role: "user",
           parts: [
             {
-              text: `${prompt}. ${process.env.LANGUAGE_TIP} ${language}. ${process.env.THANK_YOU}`,
+              text: `
+                ${process.env.PREFIX_PROMPT}:
+                ${prompt}. 
+                ${process.env.LANGUAGE_TIP} ${language}. 
+                ${process.env.THANK_YOU}
+              `,
             },
           ],
         },

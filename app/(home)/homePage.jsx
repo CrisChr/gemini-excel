@@ -48,7 +48,7 @@ export default function HomePage() {
   return (
     <>
       <h1 className="sm:text-6xl text-4xl max-w-[708px] font-bold text-slate-900">
-        Generate the Excel formulas in seconds.
+        Generate the Excel formulas by AI.
       </h1>
 
       <form className="max-w-xl w-full" onSubmit={onSubmit}>
