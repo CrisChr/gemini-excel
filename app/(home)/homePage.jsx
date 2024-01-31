@@ -9,7 +9,7 @@ import { useCompletion } from 'ai/react';
 
 export default function HomePage() {
   const [content, setContent] = useState("");
-  const [language, setLanguage] = useState("English");
+  const [language, setLanguage] = useState("🇬🇧 English");
   const answerRef = useRef(null);
 
   const scrollToAnswer = () => {
