@@ -1,6 +1,7 @@
 "use client";
 
-import DropDown from "../../components/DropDown";
+import DropDown from "components/drop-down";
+import {Button} from "components/ui/button"
 import Image from "next/image";
 import { useCallback, useRef, useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
@@ -78,7 +79,7 @@ export default function HomePage() {
           />
         </div>
 
-        <button
+        <Button
           className="bg-black rounded-xl text-white font-medium px-4 py-2 hover:bg-black/80 w-full mt-10"
           type="submit"
           disabled={isLoading}
@@ -95,7 +96,7 @@ export default function HomePage() {
           ) : (
             <span>Generate Excel formulas &rarr;</span>
           )}
-        </button>
+        </Button>
       </form>
       <Toaster
         position="top-center"
