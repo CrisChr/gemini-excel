@@ -2,7 +2,7 @@
 const nextConfig = {
   swcMinify: true,
   distDir: 'build',
-  basePath: '.'
+  basePath: './'
 }
 
 module.exports = nextConfig
