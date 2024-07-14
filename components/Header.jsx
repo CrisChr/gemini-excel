@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Header() {
+export function Header() {
   return (
     <div
       className="fixed z-10 h-14 w-full border-b bg-white bg-opacity-60 first-letter:shadow-sm"

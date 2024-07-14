@@ -1,5 +1,5 @@
-import Footer from "../components/footer";
-import Header from "../components/header";
+import {Footer} from "../components/footer.jsx";
+import {Header} from "../components/header.jsx";
 import { Inter as FontSans } from "next/font/google"
 import { cn } from "lib/utils"
 import "styles/globals.css";
